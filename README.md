@@ -14,7 +14,7 @@ query GetA() {
 
 ## How to use
 
-[nolint.Analyzer](https://pkg.go.dev/github.com/gqlgo/nolint) can be set to `Requires` field of an analyzer. `(*nolint.Requires).New` creates a reporter which ignore diagnostics with nolint comment. The reporter can be set to `(*gqlanalysis.Pass).Report` field.
+[nolint.Analyzer](https://pkg.go.dev/github.com/gqlgo/nolint) can be set to `Requires` field of an analyzer. `(*nolint.Reporters).New` creates a reporter which ignore diagnostics with nolint comment. The reporter can be set to `(*gqlanalysis.Pass).Report` field.
 
 ```go
 var Analyzer = &gqlanalysis.Analyzer{

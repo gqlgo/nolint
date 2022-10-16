@@ -1,0 +1,13 @@
+fragment AFragment1 on A {
+	name # want "NG"
+}
+
+fragment AFragment2 on A {
+	id   # nolint: OK
+	name # want "NG"
+	...BFragment
+}
+
+fragment BFragment on A {
+	name # want "NG"
+}

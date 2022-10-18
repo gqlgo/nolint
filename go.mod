@@ -3,7 +3,7 @@ module github.com/gqlgo/nolint
 go 1.17
 
 require (
-	github.com/gqlgo/gqlanalysis v0.3.4
+	github.com/gqlgo/gqlanalysis v0.3.5
 	github.com/vektah/gqlparser/v2 v2.5.1
 )
 
